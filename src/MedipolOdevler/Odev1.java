@@ -32,17 +32,18 @@ public class Odev1 {
 		 }
 		 else if(Diskriminant == 0){
 
-			 x1=x2=-b/(2*a);
+			 x1=x2=(-b)/(2*a);
 			 System.out.println("Denklemin, deðerleri birbirine eþit olan iki kökü vardýr.");
 			 System.out.printf("Bunlar: %.1f ve %.1f dir.", x1,x2);
 
 		 }
 		 else if(Diskriminant > 0){
 
-			 x1=(-b+(Math.sqrt(Diskriminant))/(2*a));
-			 x2=(-b-(Math.sqrt(Diskriminant))/(2*a));
+			 x1= ((-b) + Math.sqrt(Diskriminant)) / 2*a;
+			 x2= ((-b) - Math.sqrt(Diskriminant)) / 2*a;
 			 System.out.println("Denklemin birbirinden farklý iki gerçel kökü vardýr.");
-			 System.out.printf("Bunlar: %.2f ve %.2f dir.",x1,x2);
+			 System.out.printf("Bunlar: %.2f ve %.2f dir.\n",x1,x2);
+			 System.out.printf("Denklem diskriminantý: %.1f", Diskriminant);
 
 
 
